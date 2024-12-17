@@ -1,2 +1,3 @@
-# TheosGI
+# TheosGI (no longer maintained)
  Theos fork with clear GUI shell packed within it 
+ Well the code is public so be free to continue...
