@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="logotype">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>200</y>
+      <width>161</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>510</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; color:#edb015;&quot;&gt;*Control the Theos via TheosGI implemented menu options&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; color:#edb015;&quot;&gt;or sending commands directly from desktop*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNew_Projectc">
+    <property name="title">
+     <string>New Project</string>
+    </property>
+    <addaction name="actionNew_theos_project"/>
+    <addaction name="actioniphone_activator_listener"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_application"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_application_swift"/>
+    <addaction name="actioniphone_application_swiftui"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_control_center_module_11up"/>
+    <addaction name="actioniphone_cydget"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_flipswitch_switch"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_framework"/>
+    <addaction name="actioniphone_library"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_notification_center_widget"/>
+    <addaction name="actioniphone_notification_center_widget_7up"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_null"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_preference_bundle"/>
+    <addaction name="actioniphone_preference_bundle_swift"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_theme"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_tool"/>
+    <addaction name="actioniphone_tool_swift"/>
+    <addaction name="separator"/>
+    <addaction name="actioniphone_tweak"/>
+    <addaction name="actioniphone_tweak_swift"/>
+    <addaction name="actioniphone_tweak_with_simple_preferences"/>
+    <addaction name="actioniphone_xpc_service"/>
+    <addaction name="actioniphone_xpc_service_modern"/>
+   </widget>
+   <widget class="QMenu" name="menuPackage">
+    <property name="title">
+     <string>Make package</string>
+    </property>
+    <addaction name="actionARM"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionTheos_GI_GitHub"/>
+    <addaction name="actionDeveloper"/>
+    <addaction name="separator"/>
+    <addaction name="actionTheos_documentation"/>
+    <addaction name="actionTheos_Discord"/>
+    <addaction name="separator"/>
+    <addaction name="actionR_jailbreakdevelopers"/>
+    <addaction name="separator"/>
+    <addaction name="actionReport_issue"/>
+   </widget>
+   <widget class="QMenu" name="menuhhhh">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionhhhhhh"/>
+    <addaction name="separator"/>
+    <addaction name="actionLinux_Windows_support"/>
+    <addaction name="separator"/>
+    <addaction name="actionIs_it_official"/>
+    <addaction name="separator"/>
+    <addaction name="actionDonate_if_you_want_to_support"/>
+    <addaction name="separator"/>
+    <addaction name="actionLicense"/>
+   </widget>
+   <widget class="QMenu" name="menuhyffhy">
+    <property name="title">
+     <string>Additionls</string>
+    </property>
+    <addaction name="actionvugviuvv"/>
+    <addaction name="separator"/>
+    <addaction name="actionTheosGI_website_in_future"/>
+   </widget>
+   <widget class="QMenu" name="menuInstall_Package">
+    <property name="title">
+     <string>Install Package</string>
+    </property>
+    <addaction name="actionProceed_to_deployment"/>
+    <addaction name="separator"/>
+    <addaction name="actionAlways_install_after_packaging"/>
+   </widget>
+   <widget class="QMenu" name="menuClean">
+    <property name="title">
+     <string>Clean </string>
+    </property>
+    <addaction name="actionSelect_the_project"/>
+   </widget>
+   <addaction name="menuNew_Projectc"/>
+   <addaction name="menuPackage"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuhhhh"/>
+   <addaction name="menuhyffhy"/>
+   <addaction name="menuInstall_Package"/>
+   <addaction name="menuClean"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_theos_project">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tool-svgrepo-com2.svg</normaloff>:/newfiles/tool-svgrepo-com2.svg</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/activator_event</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAbout_Theos">
+   <property name="text">
+    <string>About Theos</string>
+   </property>
+  </action>
+  <action name="actionARM">
+   <property name="text">
+    <string>Select the project </string>
+   </property>
+   <property name="shortcut">
+    <string>M, K</string>
+   </property>
+  </action>
+  <action name="actionTheos_GI_GitHub">
+   <property name="text">
+    <string>Theos GI GitHub</string>
+   </property>
+  </action>
+  <action name="actionTheos_documentation">
+   <property name="text">
+    <string>Theos documentation</string>
+   </property>
+  </action>
+  <action name="actionDeveloper">
+   <property name="text">
+    <string>Developer</string>
+   </property>
+  </action>
+  <action name="actionTheos_Discord">
+   <property name="text">
+    <string>Theos Discord</string>
+   </property>
+  </action>
+  <action name="actionGithub">
+   <property name="text">
+    <string>Github</string>
+   </property>
+  </action>
+  <action name="actionhhhhhh">
+   <property name="text">
+    <string>What is Theos GI?</string>
+   </property>
+   <property name="shortcut">
+    <string>F, A, Q</string>
+   </property>
+  </action>
+  <action name="actionLinux_Windows_support">
+   <property name="text">
+    <string>Linux, Windows support</string>
+   </property>
+  </action>
+  <action name="actionIs_it_official">
+   <property name="text">
+    <string>Is it official?</string>
+   </property>
+  </action>
+  <action name="actionR_jailbreakdevelopers">
+   <property name="text">
+    <string>R/jailbreakdevelopers</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R, Ctrl+J, Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionvugviuvv">
+   <property name="text">
+    <string>Finish the session</string>
+   </property>
+   <property name="shortcut">
+    <string>Q, U, I, T</string>
+   </property>
+  </action>
+  <action name="actionReport_issue">
+   <property name="text">
+    <string>Report issue or bug</string>
+   </property>
+  </action>
+  <action name="actionDonate_if_you_want_to_support">
+   <property name="text">
+    <string>Donate if you want to support</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L, Ctrl+O, Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionTheosGI_website_in_future">
+   <property name="text">
+    <string>TheosGI website(in future)</string>
+   </property>
+   <property name="shortcut">
+    <string>S, P</string>
+   </property>
+  </action>
+  <action name="actionLicense">
+   <property name="text">
+    <string>License</string>
+   </property>
+   <property name="shortcut">
+    <string>L, S</string>
+   </property>
+  </action>
+  <action name="actioniphone_activator_listener">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tool-svgrepo-com2.svg</normaloff>:/newfiles/tool-svgrepo-com2.svg</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/activator_listener</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_application">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tewstc8525.png</normaloff>:/newfiles/tewstc8525.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/application</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_application_swift">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/pngeggcopy2222.png</normaloff>:/newfiles/pngeggcopy2222.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/application_swift</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_application_swiftui">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/pngeggcopy2222.png</normaloff>:/newfiles/pngeggcopy2222.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/application_swiftui</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_control_center_module_11up">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tool-box-44svgrepo-com.svg</normaloff>:/newfiles/tool-box-44svgrepo-com.svg</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/control_center_module-11up</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_cydget">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/widge22tforproje ct.png</normaloff>:/newfiles/widge22tforproje ct.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/cydget</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_flipswitch_switch">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/pngwincom6copy8888.png</normaloff>:/newfiles/pngwincom6copy8888.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/flipswitch_switch</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_framework">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tool-svgrepo-com2.svg</normaloff>:/newfiles/tool-svgrepo-com2.svg</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/framework</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_library">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/101642252.png</normaloff>:/newfiles/101642252.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/library</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_notification_center_widget">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/widge22tforproje ct.png</normaloff>:/newfiles/widge22tforproje ct.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/notification_center_widget</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_notification_center_widget_7up">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/widge22tforproje ct.png</normaloff>:/newfiles/widge22tforproje ct.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/notification_center_widget-7up</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_null">
+   <property name="text">
+    <string>iphone/null</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actioniphone_preference_bundle">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tool-box-44svgrepo-com.svg</normaloff>:/newfiles/tool-box-44svgrepo-com.svg</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/preference_bundle</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_preference_bundle_swift">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/pngeggcopy2222.png</normaloff>:/newfiles/pngeggcopy2222.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/preference_bundle_swift</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_theme">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/image_d631e4c2333-2b97-4c1c-abf8-0979f2210b08_1080x.webp</normaloff>:/newfiles/image_d631e4c2333-2b97-4c1c-abf8-0979f2210b08_1080x.webp</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/theme</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_tool">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tool-svgrepo-com2.svg</normaloff>:/newfiles/tool-svgrepo-com2.svg</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/tool</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_tool_swift">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/pngeggcopy2222.png</normaloff>:/newfiles/pngeggcopy2222.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/tool_swift</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_tweak">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tweakimage.webp</normaloff>:/newfiles/tweakimage.webp</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/tweak</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T, Ctrl+W, Ctrl+E, Ctrl+A</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_tweak_swift">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/pngeggcopy2222.png</normaloff>:/newfiles/pngeggcopy2222.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/tweak_swift</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_tweak_with_simple_preferences">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/pngeggcopy2222.png</normaloff>:/newfiles/pngeggcopy2222.png</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/tweak_with_simple_preferences</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_xpc_service">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tool-svgrepo-com2.svg</normaloff>:/newfiles/tool-svgrepo-com2.svg</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/xpc_service</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actioniphone_xpc_service_modern">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/newfiles/tool-svgrepo-com2.svg</normaloff>:/newfiles/tool-svgrepo-com2.svg</iconset>
+   </property>
+   <property name="text">
+    <string>iphone/xpc_service_modern</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionProceed_to_deployment">
+   <property name="text">
+    <string>Proceed to deployment</string>
+   </property>
+   <property name="shortcut">
+    <string>D, O</string>
+   </property>
+  </action>
+  <action name="actionAlways_install_after_packaging">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Always install after packaging</string>
+   </property>
+  </action>
+  <action name="actionSelect_the_project">
+   <property name="text">
+    <string>Select the project</string>
+   </property>
+   <property name="shortcut">
+    <string>C, L</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
